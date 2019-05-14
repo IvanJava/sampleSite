@@ -9,6 +9,7 @@ body{
 	line-height: 1.6em;
 	font-size: 16px;
 }
+
 .container{
 	width:80%;
 	margin: auto; 
@@ -39,6 +40,10 @@ body{
 	display: inline;
 	font-weight: bold;
 	padding-right: 10px;
+}
+.navbar a {
+	color: #fff;
+	text-decoration: none;
 }
 .showcase{
 	background-image: url("../img/img7.jpg");
@@ -75,3 +80,9 @@ body{
 	font-weight: bold;
 	font-size: 18px;
 }
+
+/* HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
+ HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
+  HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
+   HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!*/
+
