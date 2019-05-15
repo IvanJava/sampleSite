@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	background-color: #f4f4f4;
@@ -86,3 +87,12 @@ body{
   HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
    HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!*/
 
+.row{
+	display: flex;
+	
+
+}
+.column{
+	flex-basis: 90%;
+
+}
