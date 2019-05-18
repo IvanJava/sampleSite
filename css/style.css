@@ -8,6 +8,7 @@ body{
 	font-family: Arial,Helvetica,sans-serif;
 	line-height: 1.6em;
 	font-size: 16px;
+	counter-reset: myCounter;
 }
 
 .container{
@@ -115,6 +116,8 @@ and created a Info/blog area.*/
 
 .article{
 	flex: 70%;
+
+	
 }
 .top-article h1, .top-article h5, .top-article p{
 	width: 90%;
@@ -130,11 +133,18 @@ and created a Info/blog area.*/
 	margin-bottom: 40px;
 }
 
+
 .bottom-article h1, .bottom-article h5, .bottom-article p{
 	width: 90%;
 	display: block;
 	margin: auto;
 	text-align: justify;
+}
+.bottom-article p::after {
+	counter-increment: myCounter;
+	content: counter(myCounter);
+	vertical-align: 5px;
+	font-size: 10px;
 }
 
 .bottom-article img {
