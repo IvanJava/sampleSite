@@ -14,7 +14,7 @@ body{
 .container{
 	width:80%;
 	margin: auto; 
-	overflow:hidden;
+	display: flex;
 }
 
 .main-header{
@@ -27,35 +27,48 @@ body{
 	font-weight: 100;
 	padding-bottom: 10px;
 }
+
+/* Here's Navigation Bar starts!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
 .navbar{
 	background-color: #323234;
 	position: sticky;
+	position: -webkit-sticky; /*Safari*/
 	top: 0;
 	color: #fff;
 	min-height: 70px;
 	border-top: 1px #fff groove;
 	border-bottom: 1px #fff groove;
 	border-radius: 7%;
+
+
 }
 .navbar ul{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	list-style: none;
-
+	
 }
 .navbar li{
 	font-weight: bold;
 }
 
-.navbar a {
+.mainNavLink {
 	color: #fff;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
+	position: relative;
 	text-align: center;
 	padding: 23px;
 	border-radius: 10%;
+
 }
-.navbar a:hover{
+
+.mainNavLink:hover{
 	background-color: #252527;
 }
 
@@ -66,9 +79,35 @@ body{
 	background-color: #ff6600;
 	border-radius: 10%;
 }
-.active a:hover{
+.active .mainNavLink{
 	background-color: #ff6600;
 }
+
+/*Dropdown content!!!!!!!!!!!!!!!!*/
+.dropdown-content{
+	position: absolute;
+	display:none;
+	background-color: #f9f9f9;
+	width: 200px;
+	z-index: 1;
+	overflow: auto;
+}
+.dropdown-content p {
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:hover{
+	width: 200px;
+}
+.mainNavLink:hover .dropdown-content {
+	display: block;
+}
+
+
+
 
 /* Here start home page. i started it as float layout
 , so showcase area and main/sidebar area  are float,
@@ -84,6 +123,8 @@ and created a Info/blog area.*/
 	color: #fff;
 	font-size: 25px;
 	padding-top: 120px;
+	width:80%;
+	margin: auto; 
 }
 
 .info{
@@ -165,11 +206,16 @@ and created a Info/blog area.*/
 }
 
 
-
-
+/* HEre Welcome part starts!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
 .main{
 	float:left;
 	width: 70%;
+	
 }
 .sidebar{
 	float:right;
@@ -178,6 +224,7 @@ and created a Info/blog area.*/
 	color: #fff;
 	padding: 10px;
 	box-sizing: border-box;
+	
 }
 .main-footer{
 	margin-top: 40px;
@@ -185,6 +232,7 @@ and created a Info/blog area.*/
 	background-color: #323234;
 	height: 100px;
 	color: #fff;
+
 }
 .main-footer p{
 	padding-top: 40px;
