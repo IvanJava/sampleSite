@@ -8,7 +8,7 @@ body{
 	font-family: Arial,Helvetica,sans-serif;
 	line-height: 1.6em;
 	font-size: 16px;
-	counter-reset: myCounter;
+	counter-reset: myCounter 100;
 }
 
 .container{
@@ -141,7 +141,7 @@ and created a Info/blog area.*/
 	text-align: justify;
 }
 .bottom-article p::after {
-	counter-increment: myCounter;
+	counter-increment: myCounter -10;
 	content: counter(myCounter);
 	vertical-align: 5px;
 	font-size: 10px;
