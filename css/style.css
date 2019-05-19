@@ -37,6 +37,7 @@ body{
 	background-color: #323234;
 	position: sticky;
 	position: -webkit-sticky; /*Safari*/
+	z-index: 1;
 	top: 0;
 	color: #fff;
 	min-height: 70px;
@@ -242,10 +243,30 @@ and created a Info/blog area.*/
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	
 }
 .row section {
 	flex-basis: 35%;
 	margin: 5px;
 }
 
+/* HERE IS DROPDOWN FOR PICTURES IN THE GALLARY: TO MAKE THEM LOOK BIGGER WHEN YOU HOVER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.item1{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-img{
+	position: absolute;
+	display: none;
+	width: 800px;
+	height: 400px;
+	z-index: 2;
+}
+
+.item1:hover .dropdown-img{
+	display: block;
+}
