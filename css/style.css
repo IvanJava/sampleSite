@@ -42,42 +42,35 @@ body{
 	min-height: 70px;
 	border-top: 1px #fff groove;
 	border-bottom: 1px #fff groove;
-	border-radius: 7%;
-
-
 }
 .navbar ul{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	list-style: none;
-	
-}
-.navbar li{
-	font-weight: bold;
+	list-style: none;	
 }
 
-.mainNavLink {
+.navbar .mainNavLink {
 	color: #fff;
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
 	text-align: center;
+	font-weight: bold;
 	padding: 23px;
 	border-radius: 10%;
-
 }
 
 .mainNavLink:hover{
 	background-color: #252527;
 }
 
-.navbar a:active{
+.mainNavLink:active{
 	background-color: #ff6600;
 }
 .active{
 	background-color: #ff6600;
-	border-radius: 10%;
+	border-radius: 5%;
 }
 .active .mainNavLink{
 	background-color: #ff6600;
@@ -89,25 +82,21 @@ body{
 	display:none;
 	background-color: #f9f9f9;
 	width: 200px;
-	z-index: 1;
-	overflow: auto;
-}
-.dropdown-content p {
-	color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
 }
 
-.dropdown-content:hover{
-	width: 200px;
+.dropdown-content a {
+	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
 }
-.mainNavLink:hover .dropdown-content {
+.dropdown-content a:hover{
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content{
 	display: block;
 }
-
-
-
 
 /* Here start home page. i started it as float layout
 , so showcase area and main/sidebar area  are float,
