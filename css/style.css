@@ -259,14 +259,19 @@ and created a Info/blog area.*/
 	display: inline-block;
 }
 
-.dropdown-img{
+.dropdown-img {
 	position: absolute;
 	display: none;
-	width: 800px;
-	height: 400px;
-	z-index: 2;
 }
-
+.dropdown-img img {
+	width: 400px;
+	height: 200px;
+}
 .item1:hover .dropdown-img{
 	display: block;
+}
+
+.noteUnderImg{
+	background-color: white;
+	text-align: center;
 }
