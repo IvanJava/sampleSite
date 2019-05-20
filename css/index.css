@@ -216,6 +216,8 @@ and created a Info/blog area.*/
 	box-sizing: border-box;
 	
 }
+
+/* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .main-footer{
 	margin-top: 40px;
 	text-align: center;
@@ -230,48 +232,5 @@ and created a Info/blog area.*/
 	font-size: 18px;
 }
 
-/* HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
- HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
-  HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
-   HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!*/
 
-.row{
-	margin: 40px;
-	padding: 20px;
-	border: 1px black solid;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-.row section {
-	flex-basis: 35%;
-	margin: 5px;
-}
 
-/* HERE IS DROPDOWN FOR PICTURES IN THE GALLARY: TO MAKE THEM LOOK BIGGER WHEN YOU HOVER
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.item1{
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown-img {
-	position: absolute;
-	display: none;
-}
-.dropdown-img img {
-	width: 400px;
-	height: 200px;
-}
-.item1:hover .dropdown-img{
-	display: block;
-}
-
-.noteUnderImg{
-	background-color: white;
-	text-align: center;
-}
