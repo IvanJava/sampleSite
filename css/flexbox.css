@@ -99,21 +99,6 @@ body{
 	display: block;
 }
 
-/* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.main-footer{
-	margin-top: 40px;
-	text-align: center;
-	background-color: #323234;
-	height: 100px;
-	color: #fff;
-
-}
-.main-footer p{
-	padding-top: 40px;
-	font-weight: bold;
-	font-size: 18px;
-}
-
 /* HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
  HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
   HERE START FLEXBOX PAGE STYLE!!!!!!!!!!!
@@ -158,4 +143,19 @@ body{
 .noteUnderImg{
 	background-color: white;
 	text-align: center;
+}
+
+/* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.main-footer{
+	margin-top: 40px;
+	text-align: center;
+	background-color: #323234;
+	height: 100px;
+	color: #fff;
+	width: 100%;
+}
+.main-footer p{
+	padding-top: 40px;
+	font-weight: bold;
+	font-size: 18px;
 }
