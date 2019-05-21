@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
 </head>
 <body>
 	<header class="main-header">
@@ -14,23 +14,82 @@
 	<div class="container">
 		<ul>
 			<li><a href="index.html" class="mainNavLink">Home</a></li>
-			<li class="active dropdown">
+			<li class="dropdown">
 				<a href="flexbox.html" class="mainNavLink">Gallery</a>
 					<div class="dropdown-content">
 						<p><a href="flexbox.html">Flexbox Gallery</a></p>
 						<p><a href="w3gallery.html">W3 Gallery</a></p>
 					</div>
 			</li>
-			<li><a href="forms.html" class="mainNavLink">Forms</a></li>
+			<li class="active"><a href="forms.html" class="mainNavLink">Forms</a></li>
 			<li><a href="#" class="mainNavLink">Email</a></li>
 			<li><a href="#" class="mainNavLink">Job</a></li>
 		</ul>
-		</div>
+	</div>
 	</nav>
-	
-		<footer class="main-footer">
+	<h1 class="sign">To sigh up for Email notifications please fill out our survey:</h1>
+	<div class="mainFormArea">
+		<form>
+		<div class="rowForm">
+			<div class="col-25"><label for="fname">First Name: </label></div>
+			<div class="col-75"><input type="text" name="fname" placeholder="Enter your first name..."></div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label for="lname">Last name: </label></div>
+			<div class="col-75"><input type="text" name="lname" placeholder="Enter your last name..."></div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label>Email: </label></div>
+			<div class="col-75"><input type="email" name="email" placeholder="Enter your Email..."></div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label>Age: </label></div>
+			<div class="col-75"><input type="number" name="age" value="30"></div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label>Birthday: </label></div>
+			<div class="col-75"><input type="date" name="birthday"></div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label>Do you like chocolate: </label></div>
+			<div class="col-75">
+				<div class="checkYes"><input type="checkbox" name="checkboxYes">Yes</div>
+				<div class="checkMoreOrLess"><input type="checkbox" name="checkboxMoreOrLess">More or less</div>
+				<div class="checkNo"><input type="checkbox" name="checkboxNo">No</div>
+			</div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label>Gender: </label></div>
+			<div class="col-75">
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label>Leave your message! Your Opinion is important to us.</label></div>
+			<div class="col-75"><textarea name="textarea" placeholder="Type here..."></textarea></div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"><label>Upload your picture: </label></div>
+			<div class="col-75"><input type="file" name="uploadPic" value="Upload"></div>
+		</div>
+		<div class="rowForm">
+			<div class="col-25"></div>
+			<div class="col-75"><input type="submit" name="submit" value="Submit"></div>
+		</div>
+		
+		
+	</div>
+	</form>
+	</div>
+
+
+<footer class="main-footer">
 		<p>By Ivan Kozhokar &copy; 2017 My Website</p>
-	</footer>
+</footer>
 
 
 </body>
