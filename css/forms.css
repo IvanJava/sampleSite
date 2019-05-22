@@ -120,6 +120,7 @@ body{
 	margin: auto;
 	text-align: center;
 	margin-top: 20px;
+	
 }
 .mainFormArea {
 	width: 70%;
@@ -129,6 +130,7 @@ body{
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-top: 15px;
+
 }
 .rowForm {
 	display: flex;
@@ -166,7 +168,6 @@ body{
 .col-75 input[type="number"], input[type="date"] {
 	border-radius: 5px;
 	width: 20%;
-	
 }
 
 .col-75 input[type="file"] {

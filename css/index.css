@@ -202,11 +202,16 @@ and created a Info/blog area.*/
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
-.main{
+.welcome{
 	float:left;
 	width: 70%;
-	
 }
+
+.welcome{
+	border: 15px solid transparent;
+	padding: 15px;
+	border-width: 20px;
+	border-image: url(img/border.png) 30 stretch;}
 .sidebar{
 	float:right;
 	width: 30%;
