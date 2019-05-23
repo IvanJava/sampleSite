@@ -98,3 +98,16 @@ body{
 .dropdown:hover .dropdown-content{
 	display: block;
 }
+
+/*here where test page start*/
+/*here where test page start*/
+/*here where test page start*/
+
+.borderImg {
+	width: 90%;
+	margin: auto;
+}
+.borderImg h1{
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
