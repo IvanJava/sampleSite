@@ -102,6 +102,13 @@ body{
 /*here where test page start*/
 /*here where test page start*/
 /*here where test page start*/
+#borderImg {
+	
+	padding: 10px;
+	border: 10px solid transparent;
+	border-width: 20px;
+	border-image: url(../img/border.png) 30 round;
+}
 
 .borderImg {
 	width: 90%;
@@ -110,4 +117,41 @@ body{
 .borderImg h1{
 	padding-top: 30px;
 	padding-bottom: 15px;
+}
+.twoBackImgArea{
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.twoBackImgArea p {
+	width: 50%;
+}
+#backgroundImg {
+	width: 50%;
+	min-height: 400px;
+	border: 5px solid black;
+	
+	background-image: url(../img/guitar.png), url(../img/flame.png), url(../img/nature3.jpg);
+	background-size: 50px 50px, 100px 100px, cover;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: 70% 80%, 90% 90%, 100% 0%;
+}
+
+
+/* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.main-footer{
+	margin-top: 40px;
+	text-align: center;
+	background-color: #323234;
+	height: 100px;
+	color: #fff;
+	width: 100%;
+}
+.main-footer p{
+	padding-top: 40px;
+	font-weight: bold;
+	font-size: 18px;
 }
