@@ -26,6 +26,7 @@ body{
 	padding-top: 20px;
 	font-weight: 100;
 	padding-bottom: 10px;
+	font-family: 'Indie Flower', cursive;
 }
 
 /* Here's Navigation Bar starts!
@@ -202,16 +203,15 @@ and created a Info/blog area.*/
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
-.welcome{
+#welcome{
 	float:left;
 	width: 70%;
+	margin-right: 10px;
+	border: 5px solid transparent;
+	padding: 5px;
+	border-image: url(../img/border.png) 30 stretch;
 }
 
-.welcome{
-	border: 15px solid transparent;
-	padding: 15px;
-	border-width: 20px;
-	border-image: url(img/border.png) 30 stretch;}
 .sidebar{
 	float:right;
 	width: 30%;
