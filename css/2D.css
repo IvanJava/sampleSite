@@ -93,15 +93,57 @@ body{
   	display: block;
 }
 .dropdown-content a:hover{
-	background-color: #f1f1f1
+	background-color: #e6e6e6;
 }
 
 .dropdown:hover .dropdown-content{
 	display: block;
 }
 
+/* HERE STARTS MAIN SECTION
+FIRST IS TRANSLATE TRANSFORM*/
+.translateHeading{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 800;
+	margin-top: 15px;
+}
+.translateTrick{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	margin-top: 15px;	
+}
 
-
+.translateLeftSide{
+	width:50%;
+	height: 300px;
+	border-right: 2px groove #ff6600;
+}
+.translateRightSide{
+	width:50%;
+	height: 300px;
+}
+.translateLeftSide p{
+	background-image: url('../img/nature1.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50%;
+	margin: auto;
+	height: 100%;
+	margin-top: 20px;
+	padding: 5px;
+	color: red;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	text-align: center;
+	transition: transform 2s ease-out;
+}
+.translateLeftSide p:hover {
+	transform: translate(500px)
+}
 
 /* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .main-footer{
