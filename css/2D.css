@@ -262,7 +262,41 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	-webkit-transform: scale(0.7, 0.7);
 	transform: scale(0.7, 0.7);
 }
+/* Skew TRANSFORM SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.skew{
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+}
+.skew p{
+	text-align: justify;
+}
+.skew em{
+	font-style: normal;
+	font-size: 24px;
+	text-shadow: 2px 2px 5px red;
+	transition: transform .2s ease-out;
+}
+.skew em:hover{
+	display: inline-block;
+	color: blue;
+	transform: skewX(40deg);
+}
 
+.skew strong{
+	font-weight: normal;
+	font-size: 24px;
+	text-shadow: 2px 2px 5px blue;
+	transition: transform .2s ease-out;
+}
+
+.skew strong:hover{
+	display: inline-block;
+	color: red;
+	transform: skewY(10deg);
+}
 /* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .main-footer{
 	margin-top: 40px;
