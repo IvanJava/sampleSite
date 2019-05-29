@@ -255,7 +255,7 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .decrease img{
 	width: 300px;
 	height: 150px;
-	transition: transform 1s ease-out;
+	transition: transform 1s ease-in-out;
 }
 .decrease img:hover{
 	-ms-transform: scale(0.7, 0.7);
@@ -277,7 +277,7 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	font-style: normal;
 	font-size: 24px;
 	text-shadow: 2px 2px 5px red;
-	transition: transform .2s ease-out;
+	transition: transform .2s linear;
 }
 .skew em:hover{
 	display: inline-block;
@@ -291,7 +291,7 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	font-weight: normal;
 	font-size: 24px;
 	text-shadow: 2px 2px 5px blue;
-	transition: transform .2s ease-out;
+	transition: transform .2s ease-in;
 }
 
 .skew strong:hover{
@@ -323,7 +323,7 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	height: 300px;
 	border: 2px inset grey;
 	box-shadow: 5px 5px 10px;
-	transition: transform 1s ease-out;
+	transition: transform 1s ease;
 }
 .matrix img:hover{
 	-ms-transform: matrix(0.5, .5, .3, 0.5, .3, .4);
