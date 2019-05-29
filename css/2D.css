@@ -282,6 +282,8 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .skew em:hover{
 	display: inline-block;
 	color: blue;
+	-ms-transform: skewX(40deg);
+	-webkit-transform: skewX(40deg);
 	transform: skewX(40deg);
 }
 
@@ -295,6 +297,8 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .skew strong:hover{
 	display: inline-block;
 	color: red;
+	-ms-transform: skewY(10deg);
+	-webkit-transform: skewY(10deg);
 	transform: skewY(10deg);
 }
 
@@ -322,7 +326,9 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	transition: transform 1s ease-out;
 }
 .matrix img:hover{
-	transform: matrix(0.5, .5, .3, 0.5, .3, .4); /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+	-ms-transform: matrix(0.5, .5, .3, 0.5, .3, .4);
+	-webkit-transform: matrix(0.5, .5, .3, 0.5, .3, .4);
+	transform: matrix(.5, 0.9, -0.9, -0.5, 300, 0); /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
 }
 /* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .main-footer{
