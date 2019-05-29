@@ -31,9 +31,7 @@ body{
 
 /* Here's Navigation Bar starts!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .navbar{
 	background-color: #323234;
 	position: sticky;
@@ -101,20 +99,25 @@ body{
 }
 
 /* HERE STARTS MAIN SECTION
-FIRST IS TRANSLATE TRANSFORM*/
-.translateHeading{
+FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.translateTrick{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;	
+}
+.translateTrick p{
 	width: 90%;
 	margin: auto;
 	text-align: center;
 	font-size: 24px;
 	font-weight: 800;
 	margin-top: 15px;
-}
-.translateTrick{
-	width: 90%;
-	margin: auto;
-	display: flex;
-	margin-top: 15px;	
+	margin-bottom: 10px;
 }
 
 .translateLeftSide{
@@ -122,10 +125,7 @@ FIRST IS TRANSLATE TRANSFORM*/
 	height: 300px;
 	border-right: 2px groove #ff6600;
 }
-.translateRightSide{
-	width:50%;
-	height: 300px;
-}
+
 .translateLeftSide p{
 	background-image: url('../img/nature1.jpg');
 	background-size: contain;
@@ -139,10 +139,71 @@ FIRST IS TRANSLATE TRANSFORM*/
 	font-family: 'Indie Flower', cursive;
 	font-size: 20px;
 	text-align: center;
-	transition: transform 2s ease-out;
+	transition: transform 1.5s ease-out;
 }
 .translateLeftSide p:hover {
+	-ms-transform: translate(500px); /* IE 9 */
+  -webkit-transform: translate(500px); /* Safari */
 	transform: translate(500px)
+}
+.translatePS{
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 800;
+}
+/* SCALE AND ROTATE TRANSFORM SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.rotate{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.rotate p{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 800;
+	margin-top: 15px;
+}
+.clockwise{
+	width: 50%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.clockwise p, .counter-clockwise p{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.clockwise img{
+	width: 250px;
+	height: 150px;
+	transition: transform 1s ease-out;
+}
+.clockwise img:hover{
+	transform: rotate(180deg);
+}
+.counter-clockwise{
+	width: 50%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.counter-clockwise img{
+	width: 250px;
+	height: 150px;
+	transition: transform 1s ease-out;
+}
+.counter-clockwise img:hover{
+	transform: rotate(-180deg);
 }
 
 /* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
