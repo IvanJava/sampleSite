@@ -145,10 +145,7 @@ main h1{
 	text-align: center;
 	background-color: #ace600;
 	border-radius: 10%;
-	animation-name: example;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear; 
+	animation: example 10s infinite linear;
 }
 .anime p{
 	padding-top: 14px;
