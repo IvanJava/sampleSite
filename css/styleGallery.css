@@ -31,9 +31,7 @@ body{
 
 /* Here's Navigation Bar starts!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .navbar{
 	background-color: #323234;
 	position: sticky;
@@ -99,32 +97,7 @@ body{
 .dropdown:hover .dropdown-content{
 	display: block;
 }
-/* HERE WHERE THE GALLERY SARTS!!!!!!!!!!!!!!!!!!!!!!!!!
-/* HERE WHERE THE GALLERY SARTS!!!!!!!!!!!!!!!!!!!!!!!!!
-/* HERE WHERE THE GALLERY SARTS!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.mainArea{
-	display: flex;
-	flex-flow: wrap row;
-	justify-content: space-evenly; 
-}
 
-.gallery{
-	margin: 20px;
-	border: 1px #ccc solid;
-	width: 280px;
-	box-shadow: 3px 3px 6px;
-}
-.gallery:hover{
-	border: 1px #777 groove;
-}
-.gallery img {
-	width: 100%;
-	height: auto;
-}
-
-.gallery p{
-	text-align: center;
-}
 
 /* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .main-footer{
