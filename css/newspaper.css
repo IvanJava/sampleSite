@@ -7,7 +7,7 @@ body{
 	color: #555;
 	font-family: Arial,Helvetica,sans-serif;
 	line-height: 1.6em;
-	font-size: 16px;
+	font-size: 16px; 
 	counter-reset: myCounter 100;
 }
 
@@ -38,6 +38,8 @@ body{
 	position: -webkit-sticky; /*Safari*/
 	z-index: 1;
 	top: 0;
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
 	color: #fff;
 	min-height: 70px;
 	border-top: 1px #fff groove;
@@ -102,10 +104,31 @@ body{
 /*here main newspaper-column area!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*Pagination!!!!!!!!!!*/
+.pagination {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.pagination a{
+	margin: 10px;
+	padding: 10px;
+	margin-bottom: 0px;
+	text-decoration: none;
+	color: #555;
+	font-family: 'Indie Flower', cursive;
+	font-size: 22px;
+}
+.pagination .activePage{
+	border: 2px solid transparent;
+	border-image: url(../img/border.png) 30 round;
+}
+
 article h1{
 	width: 80%;
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-bottom: 30px;
 }
 article p{
@@ -122,7 +145,7 @@ article p{
 
 /* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .main-footer{
-	margin-top: 40px;
+	margin-top: 20px;
 	text-align: center;
 	background-color: #323234;
 	height: 100px;
