@@ -10,6 +10,7 @@ body{
 	line-height: 1.6em;
 	font-size: 16px; 
 	counter-reset: myCounter 100;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .container{

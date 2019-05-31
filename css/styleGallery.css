@@ -9,6 +9,7 @@ body{
 	line-height: 1.6em;
 	font-size: 16px;
 	counter-reset: myCounter 100;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .container{
@@ -42,6 +43,8 @@ body{
 	min-height: 70px;
 	border-top: 1px #fff groove;
 	border-bottom: 1px #fff groove;
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
 }
 .navbar ul{
 	display: flex;
