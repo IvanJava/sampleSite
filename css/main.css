@@ -1,19 +1,52 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial,Helvetica,sans-serif;
+	line-height: 1.6em;
+	font-size: 16px;
+	counter-reset: myCounter 100;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container{
+	width:80%;
+	margin: auto; 
+	display: flex;
+}
+
+.main-header{
+	background-color: #ff6600;
+	color: #fff;
+	height: 70px;
+}
+.main-header h1{
+	padding-top: 20px;
+	font-weight: 100;
+	padding-bottom: 10px;
+	font-family: 'Indie Flower', cursive;
+}
 
 /* Here's Navigation Bar starts!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
 .navbar{
 	background-color: #323234;
 	position: sticky;
 	position: -webkit-sticky; /*Safari*/
 	z-index: 1;
 	top: 0;
-	font-family: 'Indie Flower', cursive;
-	font-size: 18px;
 	color: #fff;
 	min-height: 70px;
 	border-top: 1px #fff groove;
 	border-bottom: 1px #fff groove;
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
 }
 .navbar ul{
 	display: flex;
@@ -70,46 +103,17 @@
 	display: block;
 }
 
-
-/*here main newspaper-column area!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/*Pagination!!!!!!!!!!*/
-.pagination {
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: center;
+/* Footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.main-footer{
+	margin-top: 40px;
+	text-align: center;
+	background-color: #323234;
+	height: 100px;
+	color: #fff;
+	width: 100%;
 }
-.pagination a{
-	margin: 10px;
-	padding: 10px;
-	margin-bottom: 0px;
-	text-decoration: none;
-	color: #555;
-	font-family: 'Indie Flower', cursive;
-	font-size: 22px;
-}
-.pagination .activePage{
-	border: 2px solid transparent;
-	border-image: url(../img/border.png) 30 round;
-
-}
-.pagination a:hover{
-	border: 2px solid transparent;
-	border-image: url(../img/border.png) 30 round;	
-}
-
-
-article p{
-	width: 80%;
-	margin: auto;
-	margin-top: 20px;
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
-	column-gap: 30px;
-	column-rule-style: solid;
-	column-rule-width: 1px;
-	column-rule-color:  #ff6600;
+.main-footer p{
+	padding-top: 40px;
+	font-weight: bold;
+	font-size: 18px;
 }
