@@ -135,6 +135,7 @@ and created a Info/blog area.*/
 	display: flex;
 	width: 90%;
 	margin: auto;
+	text-align: justify;
 }
 .welcome{
 	margin-right: 10px;
