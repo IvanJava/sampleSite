@@ -131,24 +131,52 @@ and created a Info/blog area.*/
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
-#welcome{
-	float:left;
-	width: 70%;
+.welcome-wrap{
+	display: flex;
+	width: 90%;
+	margin: auto;
+}
+.welcome{
 	margin-right: 10px;
 	border: 5px solid transparent;
-	padding: 5px;
 	border-image: url(../img/border.png) 30 stretch;
 }
 
 .sidebar{
-	float:right;
-	width: 30%;
 	background-color: #323234;
 	color: #fff;
 	padding: 10px;
-	box-sizing: border-box;
-	
 }
 
 
+@media only screen and (max-width: 550px){
+	.showcase{
+		display: none;
+	}
 
+	.info{
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+	'main'
+	'side'
+	;
+	}
+	.aboutMe h1, .aboutMe h6{
+		text-align: center;
+	}
+	.aboutMe img{
+		width: 50%;
+		margin: auto;
+	}
+	.moreInfo img{
+		display: none;
+	}
+	.welcome-wrap{
+		flex-wrap: wrap;
+	}
+	.welcome{
+		border-image: none;
+	}
+}
