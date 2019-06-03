@@ -27,6 +27,8 @@
 
 .twoBackImgArea p {
 	width: 50%;
+	text-align: justify;
+	margin-right: 10px;
 }
 #backgroundImg {
 	width: 50%;
@@ -57,4 +59,22 @@
 }
 .shadow-box em{
 	text-shadow: 2px 2px 5px red;
+}
+
+
+@media only screen and (max-width: 940px){
+	.twoBackImgArea{
+		flex-flow: wrap column;
+	}
+	.twoBackImgArea p{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	#backgroundImg{
+		width: 90%;
+		margin: auto;
+	}
+
 }

@@ -29,23 +29,23 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .translateLeftSide p{
 	background-image: url('../img/nature1.jpg');
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50%;
 	margin: auto;
-	height: 100%;
+	height: 80%;
 	margin-top: 20px;
 	padding: 5px;
 	color: red;
 	font-family: 'Indie Flower', cursive;
 	font-size: 20px;
 	text-align: center;
-	transition: transform 1.5s ease-out;
+	transition: transform 1s ease-out;
 }
 .translateLeftSide p:hover {
-	-ms-transform: translate(500px); /* IE 9 */
-  -webkit-transform: translate(500px); /* Safari */
-	transform: translate(500px)
+	-ms-transform: translate(400px); /* IE 9 */
+  -webkit-transform: translate(400px); /* Safari */
+	transform: translate(400px)
 }
 .translateTrick .translatePS{
 	font-size: 18px;
@@ -59,6 +59,8 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 30px;
 }
 .rotate p{
@@ -74,6 +76,7 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
+	justify-content: center;
 }
 .clockwise p, .counter-clockwise p{
 	text-align: center;
@@ -230,4 +233,26 @@ FIRST IS TRANSLATE TRANSFORM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	-ms-transform: matrix(0.5, .5, .3, 0.5, .3, .4);
 	-webkit-transform: matrix(0.5, .5, .3, 0.5, .3, .4);
 	transform: matrix(.5, 0.9, -0.9, -0.5, 300, 0); /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+}
+
+@media only screen and (max-width: 600px) {
+	.translateLeftSide p:hover {
+	-ms-transform: translate(210px); /* IE 9 */
+  -webkit-transform: translate(210px); /* Safari */
+	transform: translate(210px)
+}
+.rotate{
+	flex-flow: wrap column;
+}
+
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+	.translateLeftSide p:hover {
+	-ms-transform: translate(300px); /* IE 9 */
+  -webkit-transform: translate(300px); /* Safari */
+	transform: translate(300px)
+}
 }
