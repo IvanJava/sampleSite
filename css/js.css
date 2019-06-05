@@ -1,11 +1,7 @@
-html {
-        font-family: sans-serif;
-      }
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
+      .guessGame {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
       }
       .lastResult {
         color: white;

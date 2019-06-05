@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/js.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Number guessing game</title>
-    <link rel="stylesheet" type="text/css" href="css/js.css">
-    <script type="text/javascript" src="js.js"></script>
+    
   </head>
-
   <body>
+  <header class="main-header">
+    <div class="container">
+      <h1>My Website</h1>
+    </div>
+  </header>
+  <nav class="navbar">
+  <div class="container">
+    <div class="navHam"><label for="toggle">&#9776</label><input type="checkbox" id="toggle">
+    <ul id="list">
+      <li class="active dropdown"><a href="index.html" class="mainNavLink">Home</a>
+      <div class="dropdown-content">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="newspaper.html">Newspaper</a></p>
+        <p><a href="forms.html">Forms</a></p>
+      </div>
+      </li>
+      <li class="dropdown">
+        <a href="w3gallery.html" class="mainNavLink">Gallery</a>
+          <div class="dropdown-content">
+            <p><a href="w3gallery.html">W3 Gallery</a></p>
+            <p><a href="styleGallery.html">Another Gallery</a></p>
+            <p><a href="flexbox.html">Flexbox Gallery</a></p>
+            <p><a href="test.html">Different style techniques</a></p>
+          </div>
+      </li>
+      <li class="dropdown"><a href="2D.html" class="mainNavLink">Third Dimension</a>
+        <div class="dropdown-content">
+          <p><a href="2D.html">2D Transforms</a></p>
+          <p><a href="3D.html">3D Transforms</a></p>
+          <p><a href="animation.html">Animation</a></p>
+        </div>
+      </li>
+      <li class=dropdown>
+        <a href="js.html" class="mainNavLink">Javascript</a>
+        <div class="dropdown-content">
+        </div>
+      </li>
+    </ul>
+    </div>
+    </div>
+  </nav>
+  <section class="guessGame">
     <h1>Number guessing game</h1>
 
     <p>joury 7563905 learnig resourse center blg room 129 monday 2:00 pm 7563880 We have selected a random number between 1 and 100. See if you can guess it in 7 turns or fewer. We'll tell you if your guess was too high or too low.</p>
@@ -22,7 +67,7 @@
       <p class="lastResult"></p>
       <p class="lowOrHi"></p>
     </div>
-
+</section>
    <script type="text/javascript">
      let randomNumber = Math.floor(Math.random() * 100) + 1;
 
